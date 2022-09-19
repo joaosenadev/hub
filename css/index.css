@@ -167,6 +167,7 @@ header{
 @media (max-width: 426px) {
     header{
         width: 120vw;
+        height: 10vh;
     }
     .name{
         font-size: 24px;
@@ -198,15 +199,13 @@ header{
     .projects{
         display: flex;
         flex-direction: column;
-        margin-left: 25px;
-    }
-    .lines{
-        flex-direction: column;
+        margin-left: 85px;
     }
 }
 @media (max-width: 376px) {
     header{
-        width: 127vw;
+        width: 128vw;
+        height: 12vh;
     }
     .name{
         font-size: 25px;
@@ -233,12 +232,13 @@ header{
     .projects{
         display: flex;
         flex-direction: column;
-        margin-left: 75px;
+        margin-left: 85px;
     }
 }
 @media (max-width: 321px) {
     header{
-        width: 155vw;
+        width: 131.2vw;
+        height: 12vh;
     }
     .name{
         font-size: 25px;
@@ -255,8 +255,6 @@ header{
         font-size: 25px;
     }
     .projects{
-        display: flex;
-        flex-direction: column;
-        margin-left: 155px;
+        transform: scale(0.87);
     }
 }
