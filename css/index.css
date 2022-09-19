@@ -6,47 +6,40 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
-    overflow-x: none;
-}
 header{
     display: flex;
-    width: 100vw;
+    position: fixed;
+    width: 100%;
     height: 8vh;
-    background-color: #7431f8;
+    top: 0;
+    left: 0;
+    background: #7431f8;
+    z-index: 999px;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0px 0 25px #1e005b5e;
-}
-.name{
-    font-size: 35px;
-    font-weight: 500;
-    color: white;
+    box-shadow: 0px 0 15px #1e005b5e;
 }
 .title{
     display: flex;
     flex-direction: row;
 }
-.subname{
-    margin-top: 12px;
-    margin-left: 5px;
-    color: #3800a8;
-}
-.photoProfile{
-    display: flex;
-    margin: 70px 0 0 50px;
-    align-items: center;
-    justify-content: center;
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 15px;
+    color: white;
 }
 .photoProfile img{
-    width: 120px;
-    height: 120px;
+    margin: 45px 0 0 15px;
+    width: 80px;
+    height: 80px;
     border-radius: 100px;
     box-shadow: 0px 0 25px #1e005b5e;
 }
 .social-Midias{
-    margin-right: 50px;
-    font-size: 30px;
+    font-size: 18px;
+    margin-right: 25px;
 }
 .social-Midias a{
     color: white;
@@ -59,202 +52,181 @@ header{
 .titlePage{
     color: #7431f8;
     font-weight: 500;
-    font-size: 50px;
-    margin-bottom: 25px;
+    font-size: 25px;
+    margin-top: 45px;
+    margin-bottom: 15px;
 }
-
 .projects{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
+    overflow-x: hidden;
 }
-
 .card{
     display: flex;
     flex-direction: column;
-    width: 25em;
-    height: 27em;
+    width: 17em;
+    height: 20em;
     background-color: #7431f8;
     border-radius: 25px;
     align-items: center;
-    box-shadow: 5px 0 30px #1e005b25;
+    box-shadow: 5px 0 5px #1e005b25;
     margin: 0 50px 70px;
 }
 .card:hover{
     cursor: pointer;
     transform: scale(1.05);
     transition: 0.3s;
-    box-shadow: 10px 0 80px #1e005b46;
+    box-shadow: 10px 0 10px #1e005b46;
     border: 3px solid #6f00ff;
 }
 .lines{
     display: flex;
     flex-direction: row;
 }
-.photoProject{
-    width: 25em;
-    height: 15em;
-}
-.card img{
-    width: 25em;
-    height: 15em;
+.photoProject img{
+    width: 17em;
+    height: 10em;
     border-radius: 25px 25px 0 0;
 }
 .titleProject{
-    margin-top: 5px;
     color: white;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
 }
 .description{
     color: white;
-    font-size: 13px;
+    font-size: 10px;
     padding: 12px;
 }
-.languagesUsed{
-    font-size: 30px;
-}
-.bi-filetype-html{
-    color: orange;
-}
-.bi-filetype-js{
-    color: yellow;
-}
-.bi-filetype-css{
-    color: cyan;
-}
-
-@media (width: 1440px){
-    .social-Midias{
-        margin-right: 130px;
-        font-size: 35px;
-    }
-}
-@media (width: 2560px){
-    .name{
-        font-size: 55px;
-    }
-    .subname{
-        font-size: 30px;
-    }
-    .social-Midias{
-        margin-right: 220px;
-        font-size: 45px;
-    }
+@media (max-width: 319px) {
     .photoProfile img{
-        transform: scale(1.5);
-        margin-top: 35px;
-        margin-left: 30px;
-    }
-    .card{
-        transform: scale(1.6);
-        margin-top: 125px;
-    }
-    .titlePage{
-        font-size: 70px;
-    }
-}
-@media (max-width: 1025px){
-    .social-Midias{
-        margin-right: 100px;
-    }
-    .photoProfile img{
-        transform: scale(0.85);
-    }
-}
-
-@media (max-width: 426px) {
-    header{
-        width: 120vw;
-        height: 10vh;
-    }
-    .name{
-        font-size: 24px;
-        font-weight: 500;
-        color: white;
-    }
-    .subname{
-        font-size: 15px;
-        margin-top: 5px;
-        margin-left: 5px;
-    }
-    .photoProfile{
-        margin: 30px 0 0 30px;
-    }
-    .photoProfile img{
-        width: 90px;
-        height: 90px;
-    }
-    .social-Midias{
-        margin-right: 50px;
-        font-size: 25px;
-    }
-    .titlePage{
-        margin-bottom: 5px;
-    }
-    .card{
         transform: scale(0.9);
     }
-    .projects{
-        display: flex;
-        flex-direction: column;
-        margin-left: 85px;
-    }
-}
-@media (max-width: 376px) {
-    header{
-        width: 128vw;
-        height: 12vh;
-    }
     .name{
-        font-size: 25px;
+        font-size: 14px;
     }
-    .subname{
+    .social-Midias{
         font-size: 16px;
-        margin-top: 5px;
-        margin-left: 5px;
-    }
-    .photoProfile{
-        margin: 30px 0 0 20px;
-    }
-    .photoProfile img{
-        width: 90px;
-        height: 90px;
-    }
-    .social-Midias{
-        margin-right: 35px;
-        font-size: 25px;
+        margin-right: 18px;
     }
     .card{
         transform: scale(0.9);
     }
-    .projects{
-        display: flex;
-        flex-direction: column;
-        margin-left: 85px;
+}
+@media (min-width: 376px) {
+    .name{
+        font-size: 20px;
+    }
+    .photoProfile img{
+        transform: scale(1);
+    }
+    .card{
+        transform: scale(1.1);
+        margin-top: 10px;
+    }
+    .card:hover{
+        transform: scale(1.15);
     }
 }
-@media (max-width: 321px) {
-    header{
-        width: 131.2vw;
-        height: 12vh;
-    }
+@media (min-width: 426px) {
     .name{
-        font-size: 25px;
+        font-size: 23px;
     }
-    .photoProfile{
-        margin: 20px 0 0 20px;
+    .social-Midias{
+        font-size: 20px;
     }
     .photoProfile img{
         transform: scale(1.1);
-        margin: 20px 0 0 10px;
+        margin: 60px 0 0 25px;
+    }
+    .card{
+        transform: scale(1.1);
+        margin-top: 10px;
+    }
+    .card:hover{
+        transform: scale(1.15);
+    }
+}
+@media (min-width: 769px) {
+    .name{
+        font-size: 26px;
     }
     .social-Midias{
-        margin-right: 30px;
         font-size: 25px;
     }
+    .photoProfile img{
+        transform: scale(1.2);
+        margin: 65px 0 0 40px;
+    }
     .projects{
-        transform: scale(0.87);
+        overflow-x: visible;
+    }
+    .card{
+        transform: scale(1.3);
+    }
+    .card:hover{
+        transform: scale(1.35);
+    }
+    .titlePage{
+        color: #7431f8;
+        font-size: 35px;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+}
+@media (min-width: 1440px) {
+    .name{
+        font-size: 35px;
+    }
+    .social-Midias{
+        font-size: 25px;
+    }
+    .photoProfile img{
+        transform: scale(1.2);
+        margin: 65px 0 0 40px;
+    }
+    .card{
+        transform: scale(1.6);
+    }
+    .card:hover{
+        transform: scale(1.65);
+    }
+    .titlePage{
+        color: #7431f8;
+        font-size: 35px;
+        margin-top: 70px;
+        margin-bottom: 100px;
+    }
+    .projects{
+        overflow-x: visible;
+    }
+}
+@media (min-width: 1920px) {
+    .name{
+        font-size: 45px;
+    }
+    .social-Midias{
+        font-size: 35px;
+        margin-right: 35px;
+    }
+    .photoProfile img{
+        transform: scale(1.7);
+        margin: 100px 0 0 70px;
+    }
+    .card{
+        transform: scale(1.6);
+    }
+    .card:hover{
+        transform: scale(1.65);
+    }
+    .titlePage{
+        font-size: 35px;
+        margin-top: 80px;
+        margin-bottom: 125px;
+    }
+    .projects{
+        overflow-x: visible;
     }
 }
