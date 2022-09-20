@@ -55,7 +55,7 @@ header{
 .about{
     display: flex;
     flex-direction: column;
-    margin: 35vh 0 0 35px;
+    margin: 35vh 0 0 25px;
 }
 .about span{
     font-size: 18px;
@@ -162,7 +162,7 @@ header{
 
 @media (min-width: 375px) {
     .about{
-        margin: 37vh 0 0 35px;
+        margin: 37vh 0 0 20px;
     }
     .photoProfile img{
         left: 115px;
@@ -174,7 +174,7 @@ header{
 }
 @media (min-width: 425px) {
     .about{
-        margin: 37vh 0 0 35px;
+        margin: 37vh 0 0 30px;
     }
     .myName{
         font-size: 26px;
@@ -208,7 +208,7 @@ header{
         font-weight: 500;
     }
     .about{
-        margin: 43vh 0 0 100px;
+        margin: 43vh 0 0 50px;
     }
     .myName{
         font-size: 35px;
