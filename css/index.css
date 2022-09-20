@@ -6,55 +6,136 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to top, #7431f8, #3800a8);
+    z-index: 999px;
+}
 header{
     display: flex;
     position: fixed;
     width: 100%;
-    height: 8vh;
+    height: 10vh;
     top: 0;
     left: 0;
-    background: #7431f8;
     z-index: 999px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    box-shadow: 0px 0 15px #1e005b5e;
 }
-.title{
+.nav-list{
+    list-style: none;
     display: flex;
-    flex-direction: row;
+    padding: 15px;
 }
-.name{
-    font-size: 18px;
+.nav-list li{
+    letter-spacing: 2px;
+    margin-left: 60px;
+}
+.nav-list a{
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 300;
+}
+.nav-list a:hover{
+    transition: 0.3s;
+    color: #8b50ff;
     font-weight: 500;
-    margin-right: 15px;
+    
+}
+.nav-list li:hover{
+    transform: scale(1.1);
+    transition: 0.2s;
+    
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    margin: 200px 0 0 125px;
+}
+.about span{
+    font-size: 40px;
     color: white;
 }
+.about p{
+    font-size: 26px;
+    margin-top: 50px;
+    font-weight: 200;
+    color: white;
+}
+.myName{
+    font-size: 45px;
+}
+.F-E{
+    animation: blink 800ms steps(10) infinite normal;
+    border-right: 3px solid #3800a8;
+}
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+    to {
+        border-color: transparent;
+    }
+}
 .photoProfile img{
-    margin: 45px 0 0 15px;
-    width: 80px;
-    height: 80px;
-    border-radius: 100px;
+    position: fixed;
+    top: 120px;
+    right: 200px;
+    width: 50vh;
+    height: 50vh;
+    border-radius: 100%;
     box-shadow: 0px 0 25px #1e005b5e;
 }
+.photoProfile img:hover{
+    transform: scale(1.25);
+    transition: 0.3s;
+    box-shadow: 0px 0 100px #1e005b88;
+}
+.footer{
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 35px;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
 .social-Midias{
-    font-size: 18px;
-    margin-right: 25px;
+    display: flex;
+    position: fixed;
 }
 .social-Midias a{
+    font-size: 35px;
+    margin-left: 50px;
     color: white;
 }
 .social-Midias a:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
     color: #3800a8;
-    transition: color 0.2s;
 }
-
-.titlePage{
-    color: #7431f8;
-    font-weight: 500;
-    font-size: 25px;
-    margin-top: 45px;
-    margin-bottom: 15px;
+.one{
+    position: absolute;
+    bottom: -200px;
+    left: -200px;
+    width: 50vh;
+    height: 50vh;
+    background-color: #3800a82c;
+    border-radius: 100%;
+}
+.two{
+    position: absolute;
+    bottom: -200px;
+    right: -250px;
+    width: 60vh;
+    height: 60vh;
+    background-color: #3800a84e;
+    border-radius: 100%;
 }
 .projects{
     display: flex;
