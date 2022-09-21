@@ -8,9 +8,10 @@
 }
 body{
     width: 100%;
-    height: max-content;
+    height: 100vh;
     margin-bottom: 25px;
     overflow-x: hidden;
+    overflow-y: hidden;
     background: linear-gradient(to top, #5500ff, #2f008e);
 }
 header{
