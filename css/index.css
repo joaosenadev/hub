@@ -10,19 +10,21 @@ body{
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background: linear-gradient(to top, #7431f8, #3800a8);
+    background: linear-gradient(to top, #5500ff, #2f008e);
 }
 header{
     display: flex;
     position: fixed;
     width: 100%;
     height: 10vh;
+    padding-top: 5px;
     top: 0;
     left: 0;
     z-index: 5;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background: linear-gradient(to top, #5500ff00, #24006b);
 }
 .nav-list{
     list-style: none;
@@ -55,7 +57,7 @@ header{
 .about{
     display: flex;
     flex-direction: column;
-    margin: 35vh 0 0 25px;
+    margin: 0 20px 0 20px;
 }
 .about span{
     font-size: 18px;
@@ -63,7 +65,7 @@ header{
 }
 .about p{
     font-size: 15px;
-    margin-top: 50px;
+    margin-top: 30px;
     font-weight: 200;
     color: white;
 }
@@ -82,12 +84,18 @@ header{
         border-color: transparent;
     }
 }
-.photoProfile img{
-    position: absolute;
-    top: 100px;
-    left: 85px;
-    width: 20vh;
+.photoProfile{
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     height: 20vh;
+    margin: 13vh 0 5vh 0;
+}
+.photoProfile img{
+    width: 23vh;
+    height: 23vh;
     border-radius: 100%;
     box-shadow: 0px 0 25px #1e005b5e;
 }
@@ -100,10 +108,11 @@ header{
     display: flex;
     position: fixed;
     left: 0;
-    bottom: 35px;
+    bottom: 0;
     justify-content: center;
     width: 100%;
     height: 100px;
+    background: linear-gradient(to bottom, #5500ff00, #3d00b7);
 }
 .social-Midias{
     display: flex;
@@ -160,22 +169,8 @@ header{
     border-radius: 100%;
 }
 
-@media (min-width: 375px) {
-    .about{
-        margin: 37vh 0 0 20px;
-    }
-    .photoProfile img{
-        left: 115px;
-        transform: scale(1.15);
-    }
-    .photoProfile img:hover{
-        transform: scale(1.25);
-    }
-}
+
 @media (min-width: 425px) {
-    .about{
-        margin: 37vh 0 0 30px;
-    }
     .myName{
         font-size: 26px;
     }
@@ -185,18 +180,8 @@ header{
     .about p{
         font-size: 17px;
     }
-    .photoProfile img{
-        left: 135px;
-        transform: scale(1.25);
-    }
-    .photoProfile img:hover{
-        transform: scale(1.35);
-    }
 }
-@media (min-width: 768px) {
-    .nav-list{
-        margin-left: 35px;
-    }
+@media (min-width: 768px) { 
     .nav-list li{
         letter-spacing: 4px;
         margin-left: 35px;
@@ -207,11 +192,11 @@ header{
         text-decoration: none;
         font-weight: 500;
     }
-    .about{
-        margin: 43vh 0 0 50px;
-    }
     .myName{
         font-size: 35px;
+    }
+    .about{
+        margin: 0 20px 0 35px;
     }
     .about span{
         font-size: 30px;
@@ -219,22 +204,20 @@ header{
     .about p{
         font-size: 20px;
     }
+    .photoProfile{
+        margin: 17vh 0 8vh 0;
+    }
     .photoProfile img{
-        top: 125px;
-        left: 42vh;
-        transform: scale(1.45);
+        transform: scale(1.3);
     }
     .photoProfile img:hover{
-        transform: scale(1.6);
+        transform: scale(1.4);
     }
 }
 @media (min-width: 1024px) {
-    .nav-list{
-        margin-left: 35px;
-    }
     .nav-list li{
         letter-spacing: 4px;
-        margin-left: 35px;
+        margin-left: 50px;
     }
     .nav-list a{
         color: white;
@@ -243,96 +226,78 @@ header{
         font-weight: 500;
     }
     .about{
-        margin: 30vh 0 0 45px;
+        margin: 27vh 50vh 0 40px;
     }
     .myName{
-        font-size: 35px;
+        font-size: 40px;
     }
     .about span{
-        font-size: 30px;
+        font-size: 35px;
     }
     .about p{
-        font-size: 20px;
+        font-size: 22px;
+    }
+    .photoProfile{
+        position: absolute;
+        width: 80%;
+        margin: 10vh 0 5vh 58vh;
     }
     .photoProfile img{
-        left: 98vh;
-        top: 35vh;
+        transform: scale(1.6);
+    }
+    .photoProfile img:hover{
+        transform: scale(1.7);
+    }
+    .social-Midias a{
+        font-size: 40px;
+    }
+}
+@media (min-width: 1280px) {
+    body{
+        overflow-y: auto;
+    }
+    .nav-list li{
+        letter-spacing: 4px;
+        margin-left: 50px;
+    }
+    .nav-list a{
+        color: white;
+        font-size: 25px;
+        text-decoration: none;
+        font-weight: 500;
+    }
+    .about{
+        margin: 30vh 80vh 0 100px;
+    }
+    .myName{
+        font-size: 50px;
+    }
+    .about span{
+        font-size: 45px;
+    }
+    .about p{
+        font-size: 26px;
+    }
+    .photoProfile{
+        position: absolute;
+        width: 80%;
+        margin: 7vh 0 5vh 80vh;
+    }
+    .photoProfile img{
         transform: scale(2);
     }
     .photoProfile img:hover{
-        transform: scale(2.2);
+        transform: scale(2.1);
     }
     .social-Midias a{
         font-size: 40px;
     }
 }
 @media (min-width: 1440px) {
-    .nav-list li{
-        letter-spacing: 4px;
-        margin-left: 35px;
-    }
-    .nav-list a{
-        color: white;
-        font-size: 25px;
-        text-decoration: none;
-        font-weight: 500;
-    }
-    .about{
-        margin: 30vh 0 0 80px;
-    }
-    .myName{
-        font-size: 45px;
-    }
-    .about span{
-        font-size: 40px;
+    body{
+        overflow-y: hidden;
     }
     .about p{
-        font-size: 25px;
-    }
-    .photoProfile img{
-        top: 35vh;
-        left: 97vh;
-        transform: scale(2.3);
-    }
-    .photoProfile img:hover{
-        transform: scale(2.5);
-    }
-    .social-Midias a{
-        font-size: 40px;
-    }
-}
-@media (min-width: 1440px) {
-    .nav-list li{
-        letter-spacing: 4px;
-        margin-left: 35px;
-    }
-    .nav-list a{
-        color: white;
-        font-size: 25px;
-        text-decoration: none;
-        font-weight: 500;
-    }
-    .about{
-        margin: 30vh 0 0 100px;
-    }
-    .myName{
-        font-size: 45px;
-    }
-    .about span{
-        font-size: 40px;
-    }
-    .about p{
-        font-size: 25px;
-    }
-    .photoProfile img{
-        top: 38vh;
-        left: 145vh;
-        transform: scale(2.8);
-    }
-    .photoProfile img:hover{
-        transform: scale(3.1);
-    }
-    .social-Midias a{
-        font-size: 45px;
+        font-size: 23px;
     }
 }
