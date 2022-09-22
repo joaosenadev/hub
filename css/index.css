@@ -48,7 +48,7 @@ header{
     transition: 0.3s;
     color: #8b50ff;
     font-weight: 600;
-    
+    cursor: pointer;
 }
 .nav-list li:hover{
     transform: scale(1.1);
