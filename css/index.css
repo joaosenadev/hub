@@ -11,6 +11,7 @@ body{
     height: 100vh;
     overflow: hidden;
     background: linear-gradient(to top, #5500ff, #2f008e);
+    background-repeat: no-repeat;
 }
 header{
     display: flex;
@@ -128,7 +129,7 @@ header{
 .social-Midias a:hover{
     transform: scale(1.2);
     transition: 0.3s;
-    color: #3800a8;
+    color: #210063;
 }
 .one{
     position: absolute;

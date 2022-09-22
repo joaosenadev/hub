@@ -11,8 +11,8 @@ body{
     height: 100vh;
     margin-bottom: 25px;
     overflow-x: hidden;
-    overflow-y: hidden;
     background: linear-gradient(to top, #5500ff, #2f008e);
+    background-repeat: no-repeat;
 }
 header{
     display: flex;
@@ -99,6 +99,8 @@ header{
     width: 17em;
     height: 10em;
     border-radius: 25px 25px 0 0;
+    background-image: url("https://i.pinimg.com/564x/6d/56/17/6d561719f00d78546a16fee394c46e07.jpg");
+    background-size: cover;
     background-color: lightgray;
 }
 .titleProject{
