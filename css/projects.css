@@ -9,8 +9,7 @@
 body{
     width: 100%;
     height: 100vh;
-    margin-bottom: 25px;
-    overflow-x: hidden;
+    overflow: hidden;
     background: linear-gradient(to top, #5500ff, #2f008e);
     background-repeat: no-repeat;
 }
@@ -113,6 +112,94 @@ header{
     font-size: 10px;
     padding: 12px;
 }
+
+/* Ciculos ao fundo inicio */
+
+.one{
+    position: absolute;
+    bottom: -200px;
+    left: -200px;
+    width: 50vh;
+    height: 50vh;
+    z-index: -5;
+    background-color: #3800a8a7;
+    border-radius: 100%;
+}
+.two{
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 30vh;
+    height: 30vh;
+    z-index: -4;
+    background-color: #3800a898;
+    border-radius: 100%;
+}
+.three{
+    position: absolute;
+    bottom: 0;
+    right: -500px;
+    width: 100vh;
+    height: 100vh;
+    z-index: -1;
+    background-color: #3800a88e;
+    border-radius: 100%;
+}
+.four{
+    position: absolute;
+    bottom: 100px;
+    right: -500px;
+    width: 80vh;
+    height: 80vh;
+    z-index: -1;
+    background-color: #3800a8a9;
+    border-radius: 100%;
+}
+.five{
+    position: absolute;
+    bottom: -110vh;
+    right: -200px;
+    width: 60vh;
+    height: 60vh;
+    z-index: -1;
+    background-color: #3800a82b;
+    border-radius: 100%;
+}
+.six{
+    position: absolute;
+    bottom: -125vh;
+    right: -200px;
+    width: 40vh;
+    height: 40vh;
+    z-index: -1;
+    background-color: #3800a85b;
+    border-radius: 100%;
+}
+.seven{
+    position: absolute;
+    bottom: -120vh;
+    left: -50px;
+    width: 45vh;
+    height: 45vh;
+    z-index: -1;
+    background-color: #3800a82b;
+    border-radius: 100%;
+}
+.eight{
+    position: absolute;
+    bottom: -125vh;
+    left: -400px;
+    width: 70vh;
+    height: 70vh;
+    z-index: -1;
+    background-color: #3800a829;
+    border-radius: 100%;
+}
+
+/* Ciculos ao fundo fim*/
+
+
+
 @media (min-width: 768px) { 
     .nav-list li{
         letter-spacing: 4px;
