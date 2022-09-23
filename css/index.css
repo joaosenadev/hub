@@ -11,7 +11,7 @@ body{
     height: 275vh;
     margin-bottom: 120px;
     overflow-x: hidden;
-    background: linear-gradient(to top, #5500ff, #2f008e);
+    background-color: #4100c2;
     background-repeat: no-repeat;
 }
 header{
