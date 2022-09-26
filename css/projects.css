@@ -94,7 +94,7 @@ header{
     display: flex;
     flex-direction: column;
 }
-.photoProject img{
+.forcagameimg img{
     width: 17em;
     height: 10em;
     border-radius: 25px 25px 0 0;
@@ -112,7 +112,14 @@ header{
     font-size: 10px;
     padding: 12px;
 }
-
+.iphonepage img{
+    width: 17em;
+    height: 10em;
+    border-radius: 25px 25px 0 0;
+    background-image: url("https://i.pinimg.com/564x/54/f3/6a/54f36af5676857284a0a0f30c5d1b7ee.jpg");
+    background-size: cover;
+    background-color: lightgray;
+}
 /* Ciculos ao fundo inicio */
 
 .one{
