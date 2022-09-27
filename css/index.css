@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700&display=swap');
 
-*{
+*{ /*reset css */
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
+body{ /*Corpo do site*/
     width: 100%;
-    height: 275vh;
+    height: 175vh;
     margin-bottom: 120px;
     overflow-x: hidden;
     background-color: #4100c2;
     background-repeat: no-repeat;
 }
-header{
+header{ /*Cabeçalho*/
     display: flex;
     position: fixed;
     width: 100%;
@@ -33,14 +33,14 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 60px;
 }
 .nav-list li{
-    letter-spacing: 2px;
-    margin-left: 25px;
+    letter-spacing: 3px;
 }
 .nav-list a{
     color: white;
-    font-size: 15px;
+    font-size: 25px;
     text-decoration: none;
     font-weight: 400;
 }
@@ -58,21 +58,29 @@ header{
 
 .about{
     display: flex;
-    flex-direction: column;
-    margin: 0 20px 0 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 80px 0 80px;
+    margin: 22vh 0 8vh 0;
+    gap: 60px;
 }
-.about span{
-    font-size: 18px;
+.Text{
+    display: flex;
+    flex-direction: column;
+}
+.Text span{
+    font-size: 2rem;
     color: white;
 }
-.about p{
-    font-size: 15px;
-    margin-top: 30px;
+.Text p{
+    font-size: 1.5rem;
+    margin-top: 35px;
     font-weight: 200;
     color: white;
 }
 .myName{
-    font-size: 23px;
+    font-size: 2.3rem;
 }
 .F-E{
     animation: blink 800ms steps(10) infinite normal;
@@ -87,58 +95,20 @@ header{
     }
 }
 .photoProfile{
-    display: flex;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 20vh;
-    margin: 13vh 0 5vh 0;
-}
-.photoProfile img{
-    width: 23vh;
-    height: 23vh;
+    width: 50vh;
+    height: 50vh;
     border-radius: 100%;
     box-shadow: 0px 0 25px #1e005b5e;
 }
-.photoProfile img:hover{
-    transform: scale(1.1);
+.photoProfile:hover{
+    transform: scale(1.05);
     transition: 0.3s;
     box-shadow: 0px 0 100px #1e005b88;
 }
-.footer{
-    display: flex;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    justify-content: center;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to bottom, #5500ff00, #3d00b7);
-}
-.social-Midias{
-    display: flex;
-    position: fixed;
-}
-.social-Midias a{
-    font-size: 26px;
-    margin-top: 40px;
-    margin-left: 15px;
-    margin-right: 10px;
-    color: white;
-}
-.social-Midias a:hover{
-    transform: scale(1.2);
-    transition: 0.3s;
-    color: #210063;
-}
 
-.aboutMe-2{
+.habilidades-container{
     display: flex;
-    margin-top: 65vh;
-    height: 100vh;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
 }
 .bi-caret-down-fill{
@@ -146,16 +116,17 @@ header{
 }
 .lineAM{
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 50px;
+    margin: 20px 0 30px 0;
 }
 .lang{
-    width: 37vh;
+    width: 45vh;
     height: 45vh;
     border-radius: 25px;
     display: flex;
-    margin: 30px 30px 0 30px;
     flex-direction: column;
+    padding: 20px 20px 20px 20px;
     background-color: #320095;
     align-items: center;
     box-shadow: 0px 0 25px #1e005b40;
@@ -166,19 +137,17 @@ header{
     margin-top: 25px;
 }
 .lang span{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
     color: white;
-    margin-top: 10px;
+    padding-top: 30px;
 }
 .lang p{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 300;
     color: lightgray;
     text-align: center;
-    margin-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 10px;
 }
 .hab{
     display: flex;
@@ -186,15 +155,15 @@ header{
     align-items: center;
 }
 .habilidadeTitle{
-    font-size: 28px;
+    font-size: 40px;
     color: #280077;
 }
 .bi-caret-down-fill{
-    font-size: 30px;
+    font-size: 35px;
 }
 .CSS img{
     width: 12vh;
-    height: 18vh;
+    height: 16vh;
 }
 .JavaScript img{
     width: 24vh;
@@ -232,6 +201,36 @@ body::-webkit-scrollbar-thumb {
 background-color: #5500ff;    /* color of the scroll thumb */
 border-radius: 20px;       /* roundness of the scroll thumb */
 }
+
+/*Roda Pé*/
+footer{
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, #00000000, #24006b);
+}
+.social-Midias{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    padding-top: 25px;
+    gap: 30px;
+}
+.social-Midias a{
+    font-size: 35px;
+    color: white;
+}
+.social-Midias a:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
+    color: #5500ff;
+}
+/*Fim Roda Pé*/
+
 
 /* Ciculos ao fundo inicio */
 
@@ -275,333 +274,315 @@ border-radius: 20px;       /* roundness of the scroll thumb */
     background-color: #3800a8a9;
     border-radius: 100%;
 }
-.five{
-    position: absolute;
-    bottom: -110vh;
-    right: -200px;
-    width: 60vh;
-    height: 60vh;
-    z-index: -1;
-    background-color: #3800a82b;
-    border-radius: 100%;
-}
-.six{
-    position: absolute;
-    bottom: -125vh;
-    right: -200px;
-    width: 40vh;
-    height: 40vh;
-    z-index: -1;
-    background-color: #3800a85b;
-    border-radius: 100%;
-}
-.seven{
-    position: absolute;
-    bottom: -120vh;
-    left: -50px;
-    width: 45vh;
-    height: 45vh;
-    z-index: -1;
-    background-color: #3800a82b;
-    border-radius: 100%;
-}
-.eight{
-    position: absolute;
-    bottom: -125vh;
-    left: -400px;
-    width: 70vh;
-    height: 70vh;
-    z-index: -1;
-    background-color: #3800a829;
-    border-radius: 100%;
-}
 
 /* Ciculos ao fundo fim*/
 
-@media (min-width: 375px) {
+@media (min-width: 300px){
     body{
-        margin-bottom: 200px;
+        height: 290vh;
     }
-    .aboutMe-2{
-        margin-top: 70vh;
+    .nav-list{
+        gap: 30px;
+        padding-left: 10px;
+    }
+    .nav-list a{
+        font-size: 15px;
+    }
+    .about{
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 15vh 0 8vh 0;
+        padding: 0 30px 0 30px;
+        gap: 0;
+    }
+    .Text span{
+        font-size: 1.2rem;
+    }
+    .Text p{
+        font-size: 1rem;
+    }
+    .myName{
+        font-size: 1.5rem;
+    }
+    .photoProfile{
+        transform: scale(.7);
+    }
+    .photoProfile:hover{
+        transform: scale(.75);
+    }
+    .social-Midias{
+        gap: 25px;
+    }
+    .social-Midias a{
+        font-size: 30px;
+        color: white;
     }
     .habilidadeTitle{
-        font-size: 35px;
+        font-size: 30px;
+        color: #280077;
     }
     .bi-caret-down-fill{
-        font-size: 40px;
-    }
-    .social-Midias a{
         font-size: 30px;
-    }
-}
-@media (min-width: 425px) {
-    .myName{
-        font-size: 26px;
-    }
-    .about span{
-        font-size: 23px;
-    }
-    .about p{
-        font-size: 17px;
-    }
-    .aboutMe-2{
-        margin-top: 68vh;
-    }
-    .lang{
-        width: 45vh;
-        height: 45vh;
-    }
-}
-@media (min-width: 768px) { 
-    body{
-        height: 315vh;
-    }
-    .nav-list li{
-        letter-spacing: 4px;
-        margin-left: 35px;
-    }
-    .nav-list a{
-        color: white;
-        font-size: 20px;
-        text-decoration: none;
-        font-weight: 500;
-    }
-    .myName{
-        font-size: 35px;
-    }
-    .about{
-        margin: 0 20px 0 35px;
-    }
-    .about span{
-        font-size: 30px;
-    }
-    .about p{
-        font-size: 20px;
-    }
-    .photoProfile{
-        margin: 17vh 0 8vh 0;
-    }
-    .photoProfile img{
-        transform: scale(1.3);
-    }
-    .photoProfile img:hover{
-        transform: scale(1.4);
-    }
-    .aboutMe-2{
-        margin-top: 80vh;
-    }
-    .lang{
-        width: 50vh;
-        height: 55vh;
-    }
-    .lang img{
-        margin-top: 35px;
-    }
-    .lang span{
-        font-size: 30px;
-        margin-top: 15px;
-    }
-    .lang p{
-        font-size: 22px;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-    .habilidadeTitle{
-        margin-top: 50px;
-    }
-}
-@media (min-width: 1024px) {
-    body{
-        height: max-content;
-    }
-    .nav-list li{
-        letter-spacing: 4px;
-        margin-left: 50px;
-    }
-    .nav-list a{
-        color: white;
-        font-size: 25px;
-        text-decoration: none;
-        font-weight: 500;
-    }
-    .about{
-        margin: 27vh 50vh 0 40px;
-    }
-    .myName{
-        font-size: 38px;
-    }
-    .about span{
-        font-size: 30px;
-    }
-    .about p{
-        font-size: 20px;
-    }
-    .photoProfile{
-        position: absolute;
-        width: 80%;
-        margin: 10vh 0 5vh 58vh;
-    }
-    .photoProfile img{
-        transform: scale(1.7);
-    }
-    .photoProfile img:hover{
-        transform: scale(2);
-    }
-    .social-Midias a{
-        font-size: 35px;
-        margin-top: 20px;
-    }
-    .aboutMe-2{
-        margin-top: 8vh;
-    }
-    .hab{
-        padding-left: 10px;
+        margin-bottom: 10px;
     }
     .lineAM{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+        margin: 25px 0 0 0;
+    }
+    .lang{
+        width: 35vh;
+        height: 40vh;
+        border-radius: 15px;
+    }
+    .lang span{
+        font-size: 20px;
+        padding-top: 15px;
+    }
+    .lang p{
+        font-size: 13px;
+    }
+}
+@media (min-width: 425px){
+    body{
+        height: 330vh;
+    }
+    .nav-list{
+        gap: 30px;
+        padding-left: 10px;
+    }
+    .nav-list a{
+        font-size: 20px;
+    }
+    .about{
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 16vh 0 8vh 0;
+        padding: 0 30px 0 30px;
+        gap: 0;
+    }
+    .Text span{
+        font-size: 1.3rem;
+    }
+    .Text p{
+        font-size: 1.1rem;
+    }
+    .myName{
+        font-size: 1.6rem;
+    }
+    .photoProfile{
+        transform: scale(.7);
+    }
+    .photoProfile:hover{
+        transform: scale(.75);
+    }
+    .social-Midias{
+        gap: 30px;
+    }
+    .social-Midias a{
+        font-size: 34px;
+        color: white;
+    }
+    .lineAM{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin: 25px 0 0 0;
+    }
+    .lang{
+        width: 45vh;
+        height: 50vh;
+        border-radius: 15px;
+    }
+    .lang img{
+        transform: scale(1.3);
+    }
+    .lang span{
+        font-size: 30px;
+        padding-top: 35px;
+    }
+    .lang p{
+        font-size: 18px;
+    }
+}
+@media (min-width: 768px){
+    body{
+        height: 320vh;
+    }
+    .nav-list{
+        gap: 30px;
+        padding-left: 10px;
+    }
+    .nav-list a{
+        font-size: 20px;
+    }
+    .about{
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 16vh 0 8vh 0;
+        padding: 0 90px 0 90px;
+        gap: 0;
+    }
+    .Text span{
+        font-size: 1.3rem;
+    }
+    .Text p{
+        font-size: 1.1rem;
+    }
+    .myName{
+        font-size: 1.6rem;
+    }
+    .photoProfile{
+        transform: scale(.7);
+    }
+    .photoProfile:hover{
+        transform: scale(.75);
+    }
+    .social-Midias{
+        gap: 30px;
+    }
+    .social-Midias a{
+        font-size: 34px;
+        color: white;
+    }
+    .lineAM{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        margin: 25px 0 0 0;
+    }
+    .lang{
+        width: 45vh;
+        height: 50vh;
+        border-radius: 15px;
+    }
+    .lang img{
+        transform: scale(1.3);
+    }
+    .lang span{
+        font-size: 30px;
+        padding-top: 35px;
+    }
+    .lang p{
+        font-size: 18px;
+    }
+}
+@media (min-width: 1024px){
+    body{
+        height: 175vh;
+    }
+    .nav-list a{
+        font-size: 23px;
+    }
+    .about{
         flex-direction: row;
+        justify-content: space-around;
+        margin: 16vh 0 8vh 0;
+        padding: 0 10px 0 60px;
+        gap: 50px;
+    }
+    .Text span{
+        font-size: 1.5rem;
+    }
+    .Text p{
+        font-size: 1.2rem;
+    }
+    .myName{
+        font-size: 1.8rem;
+    }
+    .photoProfile{
+        transform: scale(.75);
+    }
+    .photoProfile:hover{
+        transform: scale(.8);
+    }
+    .social-Midias{
+        gap: 40px;
+    }
+    .social-Midias a{
+        font-size: 34px;
+        color: white;
+    }
+    .lineAM{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        margin: 15px 0 0 0;
     }
     .lang{
         width: 40vh;
         height: 45vh;
-        margin: 15px 0px 0 15px;
+        border-radius: 15px;
     }
     .lang img{
-        margin-top: 25px;
-    }
-    .lang p{
-        font-size: 17px;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-}
-@media (min-width: 1280px) {
-    .nav-list li{
-        letter-spacing: 4px;
-        margin-left: 50px;
-    }
-    .nav-list a{
-        color: white;
-        font-size: 25px;
-        text-decoration: none;
-        font-weight: 500;
-    }
-    .about{
-        margin: 30vh 80vh 0 100px;
-    }
-    .myName{
-        font-size: 40px;
-    }
-    .about span{
-        font-size: 35px;
-    }
-    .about p{
-        font-size: 22px;
-    }
-    .photoProfile{
-        position: absolute;
-        width: 80%;
-        margin: 7vh 0 5vh 75vh;
-    }
-    .photoProfile img{
-        transform: scale(2);
-        margin-right: 60px;
-    }
-    .photoProfile img:hover{
-        transform: scale(2.1);
-    }
-    .social-Midias a{
-        font-size: 35px;
-        margin-top: 30px;
-    }
-    .lang p{
-        font-size: 16px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
-@media (min-width: 1440px) {    
-    body{
-        margin-bottom: 40vh;
-    }
-    .about{
-        margin: 32vh 50vh 0 75px;
-    }
-    .photoProfile img{
-        transform: scale(2.2);
-        margin-left: 200px;
-    }
-    .photoProfile img:hover{
-        transform: scale(2.3);
-    }
-    .about p{
-        font-size: 24px;
-    }
-    .lang{
-        width: 50vh;
-        height: 55vh;
-        border-radius: 35px;
-        display: flex;
-        margin: 0 30px 0 30px;
-        flex-direction: column;
-        background-color: #320095;
-        align-items: center;
-        box-shadow: 0px 0 25px #1e005b40;
-    }
-    .lang img{
-        width: 20vh;
-        height: 20vh;
-        margin-top: 30px;
+        transform: scale(1.2);
     }
     .lang span{
-        font-size: 35px;
-        font-weight: bold;
-        color: white;
-        margin-top: 30px;
+        font-size: 25px;
+        padding-top: 30px;
     }
     .lang p{
-        font-size: 21px;
-        font-weight: 300;
-        color: lightgray;
-        text-align: center;
-        margin-top: 10px;
-        padding-left: 30px;
-        padding-right: 30px;
+        font-size: 15px;
     }
-    .hab{
-        margin-bottom: 100px;
+}
+@media (min-width: 1440px){
+    body{
+        height: 175vh;
+    }
+    .nav-list{
+        gap: 60px;
+    }
+    .nav-list a{
+        font-size: 25px;
+    }
+    
+    .about{
+        padding: 0 80px 0 80px;
+        margin: 22vh 0 8vh 0;
+        gap: 60px;
+    }
+    .Text span{
+        font-size: 2rem;
+    }
+    .Text p{
+        font-size: 1.5rem;
+    }
+    .myName{
+        font-size: 2.3rem;
+    }
+    .photoProfile{
+        transform: scale(1);
+    }
+    .photoProfile:hover{
+        transform: scale(1.05);
+    }
+    .lineAM{
+        gap: 50px;
+        margin: 20px 0 30px 0;
+    }
+    .lang{
+        width: 45vh;
+        height: 45vh;
+        border-radius: 25px;
+        padding: 20px 20px 20px 20px;
+    }
+    .lang span{
+        font-size: 30px;
+    }
+    .lang p{
+        font-size: 20px;
     }
     .habilidadeTitle{
         font-size: 40px;
     }
     .bi-caret-down-fill{
-        font-size: 45px;
-    }
-    .CSS img{
-        width: 15vh;
-        height: 20vh;
-    }
-    .JavaScript img{
-        width: 32vh;
-        height: 20vh;
-    }
-    .ReactNative img{
-        width: 20vh;
-        height: 18vh;
-    }
-    .aboutMe-2{
-        margin-top: 35vh;
-    }
-    .social-Midias a{
         font-size: 35px;
-        margin-top: 30px;
+        margin-bottom: 20px;
     }
-    .lineAM{
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-        flex-direction: row;
+}
+@media (max-height: 700px){
+    .lang p{
+        font-size: 12px;
     }
 }
