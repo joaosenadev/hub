@@ -100,21 +100,6 @@ header{
     text-align: center;
     padding: 5px 12px 5px 15px;
 }
-.forcagameimg img{
-    width: 17em;
-    height: 10em;
-    border-radius: 25px 25px 0 0;
-    background-image: url("https://i.pinimg.com/564x/6d/56/17/6d561719f00d78546a16fee394c46e07.jpg");
-    background-size: cover;
-    background-color: lightgray;
-}
-.iphonepage img{
-    width: 17em;
-    height: 10em;
-    border-radius: 25px 25px 0 0;
-    background-image: url("https://i.pinimg.com/564x/54/f3/6a/54f36af5676857284a0a0f30c5d1b7ee.jpg");
-    background-size: cover;
-}
 
 @media (min-width: 300px) {
     body{

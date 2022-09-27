@@ -18,3 +18,8 @@ function iphoneLandingPage(){
     link.href = "https://joaosenadev.github.io/iphone-landing-page/"
     link.click()
 }
+function contadorRegressivo(){
+    link = document.createElement("a")
+    link.href = "https://joaosenadev.github.io/contador-regressivo/"
+    link.click()
+}
