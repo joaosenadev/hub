@@ -23,3 +23,8 @@ function contadorRegressivo(){
     link.href = "https://joaosenadev.github.io/contador-regressivo/"
     link.click()
 }
+function calculadora(){
+    link = document.createElement("a")
+    link.href = "https://joaosenadev.github.io/calculadora-html-css-js/"
+    link.click()
+}

@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
 body{
@@ -103,7 +106,7 @@ header{
 }
 
 body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
+    width: 10px;               /* width of the entire scrollbar */
   }
   
 body::-webkit-scrollbar-track {
